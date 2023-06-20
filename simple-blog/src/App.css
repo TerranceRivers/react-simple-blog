@@ -1,0 +1,83 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.createForm {
+  width: 300px;
+  margin-right: 20px;
+}
+
+.createForm h2 {
+  margin-bottom: 10px;
+}
+
+.createForm form {
+  display: flex;
+  flex-direction: column;
+}
+
+.createForm input,
+.createForm textarea {
+  margin-bottom: 10px;
+  padding: 5px;
+}
+
+.createForm button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.createForm button:hover {
+  background-color: #45a049;
+}
+
+.allBlogs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.blogCard {
+  width: 300px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+
+.blogCard h3 {
+  margin-top: 0;
+}
+
+.blogCard p {
+  margin: 5px 0;
+}
+
+.blogCard button {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.blogCard button:hover {
+  background-color: #d32f2f;
+}
+
+@media screen and (max-width: 600px) {
+  .App {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .createForm {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
